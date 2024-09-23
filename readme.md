@@ -5,25 +5,16 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
 
 ## Sumário
 
-1. [Funcionalidades](#funcionalidade)
-    - [Criação de Metas](#criacao-metas)
-    - [Atualização de Metas](#atualizacao-metas)
-    - [Listagem de Metas](#listagem-metas)
+1. [Funcionalidades](#funcionalidades)
+    - [Criação de Metas](#criação-de-metas)
+    - [Atualização de Metas](#atualização-de-metas)
+    - [Listagem de Metas](#listagem-de-metas)
     - [Progresso Semanal](#progresso-semanal)
-    - [Banco de Dados](#banco-dados)
-2. [Instalação e Execução](#instalacao-execucao)
-    - [Observações](#observacao)
-    - [Comandos](#comandos)
-3. [Referência](#referencia)
-4. [Documentação da API](#documentacao-api)
-    - [Criar Meta](#criar-meta)
-    - [Marcar Meta como Concluída](#marcar-meta)
-    - [Obter Meta Pendentes da Semana](#obter-meta)
-    - [Obter Resumo da Semana](#obter-resumo)
+    - [Banco de Dados](#banco-de-dados)
 
 ## Funcionalidades
 - ### Criação de Metas
-    Permite que o usuário crie novas metas          semanais,    armazenando-as no banco de dados.
+    Permite que o usuário crie novas metas semanais, armazenando-as no banco de dados.
 ---
 - ### Atualização de Metas
     Os usuários podem marcar metas como concluídas, atualizando o status no banco de dados.
@@ -37,6 +28,7 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
 - ### Banco de Dados
     Utiliza Docker e Postman para interagir com o banco de dados e gerenciar as informações relacionadas às metas dos usuários.
 ---
+
 ## Instalação e Execução
 
 #### Observações
