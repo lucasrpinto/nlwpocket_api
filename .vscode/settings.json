@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "biomejs",
+    "dayjs",
+    "fastify",
+    "paralleldrive",
+    "peding",
+    "postgres",
+    "postgresql"
+  ],
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome"
+}
