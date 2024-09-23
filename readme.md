@@ -11,60 +11,66 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
     - [Listagem de Metas](#listagem-de-metas)
     - [Progresso Semanal](#progresso-semanal)
     - [Banco de Dados](#banco-de-dados)
+2. [Instalação e Execução](#instalação-e-execução)
+    - [Observações](#observações)
+    - [Comandos](#comandos)
+3. [Referência](#referência)
+4. [Documentação da API](#documentação-da-api)
+    - [Criar Meta](#criar-meta)
+    - [Marcar Meta como Concluída](#marcar-meta-como-concluída)
+    - [Obter Metas Pendentes da Semana](#obter-metas-pendentes-da-semana)
+    - [Obter Resumo da Semana](#obter-resumo-da-semana)
 
 ## Funcionalidades
+
 - ### Criação de Metas
     Permite que o usuário crie novas metas semanais, armazenando-as no banco de dados.
----
+  
 - ### Atualização de Metas
     Os usuários podem marcar metas como concluídas, atualizando o status no banco de dados.
----
+
 - ### Listagem de Metas
     A API recupera as metas criadas e organiza-as por dia da semana, permitindo que o front-end exiba o progresso semanal.
----
+
 - ### Progresso Semanal
     A API calcula a porcentagem de metas concluídas e as metas pendentes, retornando essa informação ao front-end para que seja exibida aos usuários.
----
+
 - ### Banco de Dados
     Utiliza Docker e Postman para interagir com o banco de dados e gerenciar as informações relacionadas às metas dos usuários.
----
 
 ## Instalação e Execução
 
-#### Observações
+### Observações
 
-- Certifique-se de ter o Node.js e o Docker instalados em sua máquina..
-- Execute os comandos a seguir na pasta do projeto utilizando o cmd (Windowns), terminal(Linux) e terminal(macOS). Ou utilizando o terminal de sua IDE.
+- Certifique-se de ter o Node.js e o Docker instalados em sua máquina.
+- Execute os comandos a seguir na pasta do projeto utilizando o cmd (Windows), terminal (Linux) e terminal (macOS) ou utilizando o terminal de sua IDE.
 
-#### Comandos
+### Comandos
     
-1.  Instale as dependências, inicie o servidor de desenvolvimento e crie o container no docker e as tabelas no banco de dados
+1. Instale as dependências, inicie o servidor de desenvolvimento e crie o container no Docker e as tabelas no banco de dados:
     ```bash 
     npm i
     npm run dev
-    
     docker-compose up -d
     npx drizzle-kit generate
     npx drizzle-kit migrate
     ```
-2.  Caso queira adicionar registro no banco para teste, execute esse comando.
+
+2. Caso queira adicionar registros no banco para teste, execute esse comando:
     ```bash 
     npm run dev
     ```
 
-        
 ## Referência
 
- - [NLW Pocket  Avançado - Rocketseat](https://app.rocketseat.com.br/classroom/nlw-17-pocket-intermediario)
-
-
+- [NLW Pocket Avançado - Rocketseat](https://app.rocketseat.com.br/classroom/nlw-17-pocket-intermediario)
 
 ## Documentação da API
 
-#### Criar Meta
+### Criar Meta
 
 ```http
-  POST /goals
+POST /goals
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -87,7 +93,7 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
 | `desiredWeeklyFrequency` | `string` | **Obrigatório**. Chave da API. |
 
 ---
-#### Obter Meta Pendentes da Semana
+#### Obter Metas Pendentes da Semana
 
 ```http
   GET /pending-goals
@@ -99,7 +105,7 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
 
 ---
 
-#### Obter Resumo da Semana
+#### Obter Resumo da Semana]
 
 ```http
   GET /pending-goals
