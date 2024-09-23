@@ -58,7 +58,7 @@ A API do In.Orbit é responsável por gerenciar a criação, atualização e mon
 
 2. Caso queira adicionar registros no banco para teste, execute esse comando:
     ```bash 
-    npm run dev
+    npm run seed
     ```
 
 ## Referência
